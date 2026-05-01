@@ -5,7 +5,7 @@
 **Status:** v1.0 (Stable Source Code)
 
 ## 🌌 About the Project
-**M.I.S.T** is an open-source tool developed to analyze the light curves of eclipsing binary stars, automatically detect their minimum times, and generate data for O-C (Open-C) analyses.
+**M.I.S.T** is an open-source tool developed to analyze the light curves of eclipsing binary stars, automatically detect their minimum times, and generate data for O-C (Observed minus Calculated) analyses.
 It combines both classical methods and modern data processing processes in a single interface:
 * **Kwee-van Woerden (KvW) Method**
 * **Parabolic Fitting Method**
@@ -44,7 +44,7 @@ python mist.py
 🎓 Citation
 This software has been developed for scientific research. If you use it in your studies, please cite it as follows:
 
-> Caliskan, S. C. (2026). *M.I.S.T: Minima Identification Search Tool*. MSc Thesis Project. GitHub Repository. https://github.com/thematicmathematics/MIST---Astro-Tool
+> Caliskan, S. C. (2026). *M.I.S.T: Minima Identification Search Tool*.  GitHub Repository. https://github.com/thematicmathematics/MIST---Astro-Tool
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.

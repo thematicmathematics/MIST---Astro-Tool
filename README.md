@@ -15,7 +15,7 @@ It combines both classical methods and modern data processing processes in a sin
 
 
 ## 🚀 Key Features 
-* **Automated Detection:** Automatically scans for primary and secondary minima in the light curve.
+* **Automated Detection:** Automatically scans for primary and secondary minima in the light curve. The contents of the .csv file include a header (BJD-2400000), magnitudes, and phase values ​​normalized between 0.8 and 1.8.
 * **Error Analysis:**  M.I.S.T uses Monte Carlo simulation to estimate the uncertainty of minimum times. For each minimum, observation noise (σ) is first calculated from the parabolic fit residuals. Then, the light curve is resampled N times (e.g: 100 iterations) by adding random perturbations to this noise level, and the parabolic minimum times are recalculated with KvW each time. The standard deviation of the resulting distribution is reported as the final error estimate (±). A higher number of iterations produces more stable error estimates but increases processing time.
 * **Hybrid Analysis:** Simultaneously applies and compares KvW and Parabolic methods.
 * **User-Friendly GUI:** Modern interface based on PyQt6 with dark mode.

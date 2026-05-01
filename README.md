@@ -16,10 +16,11 @@ It combines both classical methods and modern data processing processes in a sin
 
 ## 🚀 Key Features 
 * **Automated Detection:** Automatically scans for primary and secondary minima in the light curve.
-* **Error Analysis:** Calculates error margins using Monte Carlo simulations.
+* **Error Analysis:**  M.I.S.T uses Monte Carlo simulation to estimate the uncertainty of minimum times. For each minimum, observation noise (σ) is first calculated from the parabolic fit residuals. Then, the light curve is resampled N times (e.g: 100 iterations) by adding random perturbations to this noise level, and the parabolic minimum times are recalculated with KvW each time. The standard deviation of the resulting distribution is reported as the final error estimate (±). A higher number of iterations produces more stable error estimates but increases processing time.
 * **Hybrid Analysis:** Simultaneously applies and compares KvW and Parabolic methods.
 * **User-Friendly GUI:** Modern interface based on PyQt6 with dark mode.
-* 
+* The Threshold parameter defines the maximum allowable difference (in days) between the minimum times produced by the KvW and parabolic fit methods. Minimums exceeding this value are marked as CHECK in the report and require manual review.
+
 ## 🛠️ Installation & Usage 
 M.I.S.T. has been shared as "Source Code" for the purposes of scientific transparency and security. You need the Python environment to run it.
 ### Requirements 
